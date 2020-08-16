@@ -4,11 +4,19 @@ const int xPin = A3; // x-axis of the accelerometer
 const int yPin = A2; // y-axis
 const int zPin = A1; // z-axis
 const int led1 = 21; // red LED to check if accelerometer measures movement
+const int upPin = 33; // motor control up
+const int downPin = 15; // motor control down
+const int rightPin = 12; // motor control right
+const int leftPin = 27; // motor control left
  
 void setup()
 {
   servo_setup();
   pinMode(led1, OUTPUT); // make red led an ouput indicator for accelerometer movement
+  pinMode(upPin, INPUT);
+  pinMode(downPin, INPUT);
+  pinMode(rightPin, INPUT);
+  pinMode(leftPin, INPUT);
   Serial.begin(9600); // Serial baud rate of 9600
 }
 
@@ -61,8 +69,10 @@ float sampleZ(){
  
 void loop()
 {
-
   servo_loop();
+
+  Serial.print(analogRead(upPin));
+  Serial.print("\n");
  
   float xVal, yVal, zVal;
 
@@ -72,7 +82,7 @@ void loop()
 
   if (recMovement(xVal,yVal) == 1){ // passing the averaged acceleromter outputs to the recMovement() function and checking to see if there is movement
     digitalWrite(led1, HIGH); // turn on the led when movement has been recognizes
-    Serial.print("OPEN DOOR!!\n");
+    //Serial.print("OPEN DOOR!!\n");
     delay(500);
   } else {
     digitalWrite(led1, LOW);
