@@ -7,9 +7,8 @@ const int led1 = 21; // red LED to check if accelerometer measures movement
  
 void setup()
 {
+  servo_setup();
   pinMode(led1, OUTPUT); // make red led an ouput indicator for accelerometer movement
-  pinMode(13, OUTPUT); // embedded led on ESP32
-  digitalWrite(13, HIGH); // set that embedded led high
   Serial.begin(9600); // Serial baud rate of 9600
 }
 
@@ -62,6 +61,8 @@ float sampleZ(){
  
 void loop()
 {
+
+  servo_loop();
  
   float xVal, yVal, zVal;
 
