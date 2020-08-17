@@ -21,6 +21,9 @@ void motor_setup(){
   pinMode(r_motor_pwm, OUTPUT);
   pinMode(l_motor_dir, OUTPUT);
   pinMode(r_motor_dir, OUTPUT);
+
+  ledcWrite(l_motor_channel, 0); // setting initial motor duty cycles to 0 (motor no move at start)
+  ledcWrite(r_motor_channel, 0);
   
 }
 

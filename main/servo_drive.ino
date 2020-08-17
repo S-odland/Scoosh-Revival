@@ -8,30 +8,7 @@ void servo_setup() {
   myServo.attach(13);  // attaches the servo on pin 13 to the servo object
 }
 
-void servo_loop() {
-
-//  if (Serial.available() > 0){
-//    val = Serial.read();
-//  
-//    if (val == 'w'){
-//      pos += 1;
-//      if (pos > 180) {
-//        pos = 180;
-//      }
-//      myServo.write(pos);
-//      delay(15);
-//    } else if (val == 's'){
-//      pos -= 1;
-//      if (pos < 0) {
-//        pos = 0;
-//      }
-//      myServo.write(pos);
-//      delay(15);
-//    }
-//  }
-//
-//    
-
+void servo_loop() {   
   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     myServo.write(pos);              // tell servo to go to position in variable 'pos'
