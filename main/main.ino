@@ -11,7 +11,8 @@ const int leftPin = 27; // motor control left
  
 void setup()
 {
-  servo_setup();
+  //servo_setup();
+  motor_setup();
   pinMode(led1, OUTPUT); // make red led an ouput indicator for accelerometer movement
   Serial.begin(9600); // Serial baud rate of 9600
 }
@@ -65,7 +66,8 @@ float sampleZ(){
  
 void loop()
 {
-  servo_loop();
+  //servo_loop();
+  motor_loop();
 
   Serial.print(analogRead(upPin));
   Serial.print("\n");
