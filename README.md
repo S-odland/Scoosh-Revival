@@ -1,5 +1,3 @@
-"# open-door" 
-
 Keep my embedded chops and have some fun in the process --> make a motion sensor to detect door opening and actuate a servo motor and speaker to operate a skull jaw to scare those who enter
 
 ///////// EDITS //////////////
@@ -9,3 +7,7 @@ motion sensor was quick and simple - gonna bring back to life a broken robot fro
 ////////// NEW PLAN /////////////
 
 create a python client interface to communicate with ESP32 over BT connection to control robot using arrow keys on computer. Maybe even make an HTML website to make commands, but who knows. 
+
+////////// UPDATE //////////
+ 
+just found out what the name of the old robot used to be, this project is now project "revive scoosh"
