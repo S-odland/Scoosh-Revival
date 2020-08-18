@@ -4,10 +4,6 @@ const int xPin = A3; // x-axis of the accelerometer
 const int yPin = A2; // y-axis
 const int zPin = A1; // z-axis
 const int led1 = 21; // red LED to check if accelerometer measures movement
-const int upPin = 33; // motor control up
-const int downPin = 15; // motor control down
-const int rightPin = 12; // motor control right
-const int leftPin = 27; // motor control left
  
 void setup()
 {
