@@ -9,3 +9,7 @@ motion sensor was quick and simple - gonna bring back to life a broken robot fro
 ////////// NEW PLAN /////////////
 
 create a python client interface to communicate with ESP32 over BT connection to control robot using arrow keys on computer. Maybe even make an HTML website to make commands, but who knows. 
+
+////////// UPDATE //////////
+ 
+just found out what the name of the old robot used to be, this project is now project "revive scoosh"
