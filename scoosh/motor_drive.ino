@@ -27,7 +27,7 @@ void motor_setup(){
 
 void motor_loop(){
 
-  ledcWrite(l_motor_channel, 0);
+  ledcWrite(l_motor_channel, 255);
   digitalWrite(l_motor_dir, 1);
   
   ledcWrite(r_motor_channel, 0);

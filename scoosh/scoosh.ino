@@ -64,9 +64,6 @@ void loop()
 {
   //servo_loop();
   motor_loop();
-
-  Serial.print(analogRead(upPin));
-  Serial.print("\n");
  
   float xVal, yVal, zVal;
 
